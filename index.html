@@ -98,7 +98,7 @@
       ip = data.ip_address;
     });
 
-    var url = 'https://ep.smartad.digital/api/lead/67/2?sub3='+SUB3+'&sub2='+SUB2;
+    var url = 'http://example.slerr.ru/slon_amulet_101/send.php';
 
     function ok_submit(f) {
 
@@ -114,11 +114,11 @@
 
           xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
               if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-                f.action = 'ok.html';
-                f.submit();
+              //  f.action = 'ok.html';
+              //  f.submit();
               }
           }
-          xhr.send("name="+fname+"&phone="+fphone+"&ip="+ip+'&ua=s2s');
+          xhr.send("name="+fname+"&phone="+fphone+"&ip="+ip+'&ua=s2s&sub3='+SUB3+'&sub2='+SUB2);
 
         }
 
