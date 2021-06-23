@@ -114,8 +114,8 @@
 
           xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
               if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-              //  f.action = 'ok.html';
-              //  f.submit();
+                f.action = 'ok.html';
+                f.submit();
               }
           }
           xhr.send("name="+fname+"&phone="+fphone+"&ip="+ip+'&ua=s2s&sub3='+SUB3+'&sub2='+SUB2);
